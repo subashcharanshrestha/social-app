@@ -86,6 +86,16 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
-  # Do not dump schema after migrations.
+   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.action_mailer.default_url_options = { :host => "https://subasvayu-social-app.herokuapp.com" }
+  ActionMailer::Base.smtp_settings = {
+  :user_name => 'subasvayu',
+  :password => 'wenesday123',
+  :domain => 'https://subasvayu-social-app.herokuapp.com',
+  :address => 'smtp.sendgrid.net',
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+  }
 end
