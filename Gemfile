@@ -15,6 +15,7 @@ gem 'devise-bootstrap-views'
 gem 'therubyracer'
 
 gem 'stock_quote'
+gem 'stripe'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'autoprefixer-rails'
